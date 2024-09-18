@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.CSS">
+</head>
+<body>
+    <h2>Service Registration Form</h2>
+
+    <form action="submit_registration.php" method="POST">
+        <!-- Text Box -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <!-- Email Text Box -->
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <!-- Radio Button -->
+        <label>Gender:</label>
+        <div class="radio-group">
+            <label><input type="radio" name="gender" value="male" required> Male</label>
+            <label><input type="radio" name="gender" value="female" required> Female</label>
+            <label><input type="radio" name="gender" value="other" required> Other</label>
+        </div>
+
+        <!-- Select Box -->
+        <label for="service">Select Service:</label>
+        <select id="service" name="service" required>
+            <option value="" disabled selected>Select a service</option>
+            <option value="web-development">Web Development</option>
+            <option value="UI/UX-design">UI/UX Design</option>
+            <option value="digital-marketing">Digital Marketing</option>
+        </select>
+
+        <!-- Check Box -->
+        <label>Subscribe to newsletters:</label>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="newsletter" value="yes"> Yes, I want to receive updates</label>
+        </div>
+
+        <!-- Submit and Reset Buttons -->
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
